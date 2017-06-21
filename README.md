@@ -1,4 +1,4 @@
-# UVA-code
+# UVA code
 
 Storage my UVa code solution and some personal knowledge
 
