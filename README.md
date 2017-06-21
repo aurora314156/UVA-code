@@ -1,4 +1,4 @@
 # UVA-code
 
-## <a herf="http://zzxx852852.blogspot.tw/">MY BLOG</a>
+## [MY BLOG] : http://zzxx852852.blogspot.tw/
 
