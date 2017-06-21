@@ -1,7 +1,3 @@
 # UVA-code
 
-##[MY BLOG]:( http://zzxx852852.blogspot.tw/)
-
-
-
-This is [an example](http://example.com/ "Title") inline link.
+This is [MY BLOG](http://zzxx852852.blogspot.tw/ "Title") inline link.
