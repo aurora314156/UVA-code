@@ -1,0 +1,68 @@
+#include <iostream>
+#include <stdio.h>
+#include <map>
+#include <string.h>
+using namespace std;
+
+
+int main() {
+
+	int l = 0;
+	int n = 0;
+	char oriWord[20], pluWord[20], testCase[20];
+
+	while (scanf("%d %d",&l,&n) != EOF)
+	{
+		map <string, string> m;
+		
+		while (l--)
+		{
+			scanf("%s %s", oriWord, pluWord);
+			m[oriWord] = pluWord;
+			
+		}
+		while (n--)
+		{
+			scanf("%s",testCase);
+			map<string,string>::iterator iter;
+			iter = m.find(testCase);
+			if (iter!=m.end())
+			{
+				cout<< iter->second<<endl;
+			}
+			else 
+			{
+				int len = strlen(testCase);
+				if (testCase[len -1] == 'y'&& testCase[len - 2] != 'e' && testCase[len - 2] != 'i' && testCase[len - 2] != 'o' && testCase[len - 2] != 'u' && testCase[len - 2] != 'a') {
+					for (int i = 0; i < len - 1; i++)
+					{
+						printf("%c", testCase[i]);
+						
+					}
+					
+					printf("ies\n");
+				}
+				else{
+					for (int i = 0; i < len; i++)
+					{
+						printf("%c", testCase[i]);
+					}
+				
+					if (testCase[len - 1] == 'o' || testCase[len - 1] == 's' || (testCase[len - 1] == 'h' && testCase[len - 2] == 'c') || (testCase[len - 1] == 'h'&&testCase[len - 2] == 's') || testCase[len - 1] == 'x') {
+							printf("es\n");
+					
+					}
+					else
+					{
+						
+							printf("s\n");
+					}
+				}
+				
+			}
+			
+		}
+		
+	}
+	system("PAUSE");
+}
