@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes
+	long long n = 0;
+	while(scanf("%lld",&n) && n)
+	{
+		int flag =0;
+		for (int i=9; i>=0; i--)
+		{
+			if((n-i)%9==0)
+			{
+				if(flag)cout<<" ";
+				cout<<(n-i)/9*10+i;
+				flag = 1;
+			}
+		}
+		cout<<endl;
+		
+	}
+	return 0;
+}
